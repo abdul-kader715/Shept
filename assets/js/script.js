@@ -576,6 +576,16 @@
     }  
 
 
+    $('.single-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        arrows:true,
+        infinite: true,
+        cssEase: 'linear'
+    });
+
+
     /*------------------------------------------
         = SHOP DETAILS PAGE PRODUCT SLIDER
     -------------------------------------------*/
@@ -588,7 +598,7 @@
             asNavFor: '.slider-nav'
         });
         $('.slider-nav').slick({
-            slidesToShow: 5,
+            slidesToShow: 2,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
             focusOnSelect: true,
@@ -599,7 +609,7 @@
                 {
                     breakpoint: 500,
                     settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                         infinite: true
                     }
                 },
