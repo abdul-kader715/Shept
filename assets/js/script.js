@@ -636,6 +636,21 @@
 
 
     /*------------------------------------------
+        = TESTIMONIALS SLIDER
+    -------------------------------------------*/
+   
+    if ($('.testimonials-slider').length) {
+        $('.testimonials-slider').bxSlider({
+            auto:false,            
+            controls: false,
+            mode: 'fade',
+            pause: 3000,
+            speed: 500,
+            pager: true,
+            pagerCustom: '#testimonials-slider-pager'
+        });
+    }
+    /*------------------------------------------
         = TOUCHSPIN FOR PRODUCT SINGLE PAGE
     -------------------------------------------*/
     if ($("input[name='product-count']").length) {

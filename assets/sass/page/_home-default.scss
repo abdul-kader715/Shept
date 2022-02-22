@@ -742,12 +742,164 @@
 
 // start testimonials-slider
 .wpo-testimonials-slider-section {
-
+    position: relative;
+    .bx-wrapper {
+        box-shadow: none; 
+         border:none; 
+        background:transparent;
+    }
     .testimonials-content {
 
         .grid {
-            .quote{}
-            .client-pic{}
+            text-align: center;
+            padding-top: 100px;
+
+            .quote {
+                padding: 0 130px;
+
+                img {
+                    margin: 0 auto;
+                    width: 70px;
+                }
+
+                h2 {
+                    font-family: $heading-font;
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 52px;
+                    padding-bottom: 10px;
+                    margin: 30px 0;
+                }
+
+                .info {
+                    padding-top: 40px;
+
+                    h5 {
+                        font-family: $heading-font;
+                        font-size: 23px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        margin-bottom: 25px;
+                    }
+
+                    span {
+                        font-family: $base-font;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            .client-pic {
+                padding: 20px 0;
+                width: 300px;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .content-testimonials-active {
+        #testimonials-slider-pager {
+
+            >a {
+                position: absolute;
+
+                @include media-query(991px) {
+                    position: static;
+                    display: inline-block;
+                    float: left;
+                }
+            }
+
+            >a img {
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+
+                @include media-query(991px) {
+                    width: 90px !important;
+                }
+            }
+
+            >a:first-child {
+                top: 315px;
+                left: 115px;
+            }
+
+            >a:nth-child(2) {
+                left: 374px;
+                top: 125px;
+
+                @include media-query(1199px) {
+                    left: 80px;
+                }
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            >a:nth-child(3) {
+                left: 260px;
+                bottom: 167px;
+
+                @include media-query(1199px) {
+                    left: 200px;
+                }
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            >a:nth-child(4) {
+                right: 360px;
+                    top: 118px;
+
+                @include media-query(1199px) {
+                    left: 150px;
+                }
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            >a:nth-child(5) {
+                right: 120px;
+                top: 350px;
+
+                @include media-query(1199px) {
+                    left: 50px;
+                }
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            >a:nth-child(6) {
+                right:260px;
+                bottom: 167px;
+
+                @include media-query(1199px) {
+                    left: 180px;
+                }
+
+                img {
+                    width: 160px;
+                    height: 160px;
+                }
+            }
         }
     }
 }
