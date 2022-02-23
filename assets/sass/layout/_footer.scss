@@ -14,18 +14,24 @@
         background: $blog-btn-color;
         left: 0;
         top: 0;
-        width: 650px;
+        width: 588px;
         height: 100%;
         z-index: -1;
-
-        @media (max-width:1440px) {
-            width: 420px;
+        @media (max-width:1500px) {
+            width: 460px;
         }
-
+        @media (max-width:1440px) {
+            width: 400px;
+        }
+        @media (max-width:1200px) {
+            width: 300px;
+        }
+        @media (max-width:1199px) {
+            width: 290px;
+        }
         @media (max-width:1024px) {
             width: 280px;
         }
-
         @media (max-width:992px) {
             display: none;
         }

@@ -35,12 +35,12 @@
 		}
 
 		@include media-query(767px) {
-			font-size: 32px;
+			font-size: 30px;
 			line-height: 40px;
 		}
 
 		@include media-query(330px) {
-			font-size: 30px;
+			font-size: 25px;
 		}
 
 	}
