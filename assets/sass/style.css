@@ -3860,7 +3860,7 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.original {
 }
 
 @media (max-width: 767px) {
-  .wpo-benner-area .benner-wrap {
+  .wpo-benner-area .benner-wrap p {
     font-size: 15px;
     line-height: 26px;
     margin-bottom: 35px;
@@ -4138,14 +4138,6 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.original {
   }
 }
 
-@media (max-width: 767px) {
-  .wpo-cta-section .cta-text .cta-wrap {
-    font-size: 15px;
-    line-height: 26px;
-    margin-bottom: 35px;
-  }
-}
-
 .wpo-cta-section .cta-text .cta-wrap .cta-btn {
   font-family: "DM Sans", sans-serif;
   font-size: 19px;
@@ -4224,7 +4216,7 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.original {
   width: 100%;
 }
 
-.wpo-team-section .team-wrap .team-single:hover .team-single-title h2 {
+.wpo-team-section .team-wrap .team-single:hover .team-single-title a {
   color: #fff;
 }
 
@@ -4260,11 +4252,18 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.original {
   background: linear-gradient(to right, #1F0553, #071e93);
 }
 
-.wpo-team-section .team-wrap .team-single .team-single-title h2 {
+.wpo-team-section .team-wrap .team-single .team-single-title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Montserrat", sans-serif;
   font-size: 23px;
   font-weight: 700;
   line-height: 28px;
+  margin-bottom: 10px;
   color: #1F0553;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -4415,8 +4414,8 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.original {
 
 @media (max-width: 1400px) {
   .wpo-project-section .wpo-static-hero-inner .cta-text .cta-wrap h2 {
-    font-size: 40px;
-    line-height: 70px;
+    font-size: 34px;
+    line-height: 48px;
   }
 }
 
@@ -4458,7 +4457,7 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.original {
 }
 
 @media (max-width: 767px) {
-  .wpo-project-section .wpo-static-hero-inner .cta-text .cta-wrap {
+  .wpo-project-section .wpo-static-hero-inner .cta-text .cta-wrap p {
     font-size: 15px;
     line-height: 26px;
     margin-bottom: 35px;
@@ -4681,16 +4680,23 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.original {
   }
 }
 
-.wpo-testimonials-slider-section .testimonials-content .grid .quote .info h5 {
+.wpo-testimonials-slider-section .testimonials-content .grid .quote .info a {
+  color: #1F0553;
   font-family: "Montserrat", sans-serif;
   font-size: 23px;
   font-weight: 700;
   line-height: 27px;
   margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 768px) {
-  .wpo-testimonials-slider-section .testimonials-content .grid .quote .info h5 {
+  .wpo-testimonials-slider-section .testimonials-content .grid .quote .info a {
     font-size: 20px;
     line-height: 30px;
     margin: 0;
