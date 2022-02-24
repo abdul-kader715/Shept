@@ -3939,6 +3939,8 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.original {
   border-radius: 15px;
   position: relative;
   margin-bottom: 30px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .wpo-services-area .services-wrap .services-item .services-singel-img {
@@ -4498,15 +4500,22 @@ nav.navigation.navbar.navbar-expand-lg.navbar-light.original {
   }
 }
 
-.wpo-project-section .static-hero-wrap .static-blog .static-blog-title h2 {
+.wpo-project-section .static-hero-wrap .static-blog .static-blog-title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 23px;
   font-weight: 700;
   line-height: 28px;
   margin-bottom: 12px;
+  color: #1F0553;
 }
 
 @media (max-width: 768px) {
-  .wpo-project-section .static-hero-wrap .static-blog .static-blog-title h2 {
+  .wpo-project-section .static-hero-wrap .static-blog .static-blog-title a {
     font-size: 15px;
     line-height: 35px;
     margin-bottom: 6px;
