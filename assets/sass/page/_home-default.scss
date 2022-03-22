@@ -59,8 +59,12 @@
             font-weight: 700;
             line-height: 80px;
             color: $white;
-            margin: 2px 0;
+            margin-top: 22px;
+            margin-bottom: 22px;
 
+            @media (max-width:1199px) {
+                font-size: 53px;
+            }
             @media (max-width:991px) {
                 font-size: 40px;
                 line-height: 53px;
@@ -79,7 +83,7 @@
             font-weight: 700;
             line-height: 36px;
             color: $text-light-color;
-            margin-bottom: 48px;
+            margin-bottom: 50px;
 
             @media (max-width:767px) {
                 font-size: 15px;
@@ -146,8 +150,20 @@
     @media (max-width:767px) {
         padding-bottom: 50px;
     }
+    .wpo-section-title{
+        h2{
+            @media (max-width:1199px) {
+                font-size: 40px;
+            }
+            @media (max-width:420px) {
+                font-size: 29px;
+                line-height: 25px;
+            }
+        }
+    }
 
     .services-wrap {
+        margin-top: 16px;
         .services-item {
             padding: 55px 20px;
             text-align: center;
@@ -216,6 +232,7 @@
                     text-align: center;
                     color: $dark-gray;
                     margin-top: 34px;
+                    margin-bottom: 16px;
                     transition: .4s ease-in-out;
                 }
 
@@ -226,7 +243,7 @@
                     line-height: 31px;
                     color: $body-color;
                     font-family: $base-font;
-                    margin-bottom: 34px;
+                    margin-bottom: 49px;
                     transition: .4s ease-in-out;
                 }
 
@@ -312,10 +329,15 @@
                 font-family: $heading-font;
                 font-size: 60px;
                 font-weight: 700;
-                line-height: 80px;
+                line-height: 70px;
                 color: $dark-gray;
-                margin: 2px 0;
+                margin-bottom:15px;
+                margin-top: 24px;
 
+                @media (max-width:1199px) {
+                    font-size: 48px;
+                    line-height: 65px;
+                }
                 @media (max-width:991px) {
                     font-size: 40px;
                     line-height: 53px;
@@ -334,7 +356,7 @@
                 font-weight: 700;
                 line-height: 36px;
                 color: $body-color;
-                margin-bottom: 48px;
+                margin-bottom: 57px;
 
                 @media (max-width:767px) {
                     font-size: 15px;
@@ -399,9 +421,20 @@
 
 // start team section
 .wpo-team-section {
-
+    .wpo-section-title{
+        h2{
+            margin: 7px 0  22px;
+            @media (max-width:1199px) {
+                font-size: 40px;
+            }
+            @media (max-width:472px) {
+                font-size: 26px;
+            }
+        }
+        
+    }
     .team-wrap {
-
+        margin-top: 9px;
         .team-single {
             text-align: center;
 
@@ -584,11 +617,11 @@
 
                 h2 {
                     font-family: $heading-font;
-                    font-size: 60px;
+                    font-size: 45px;
                     font-weight: 700;
-                    line-height: 80px;
+                    line-height: 60px;
                     color: $dark-gray;
-                    margin: 2px 0;
+                    margin: 22px 0;
 
                     @media (max-width:1400px) {
                         font-size: 34px;
@@ -600,14 +633,14 @@
                     }
 
                     @media (max-width:991px) {
-                        font-size: 40px;
-                        line-height: 40px;
+                            font-size: 29px;
+                            line-height: 40px;
                     }
 
-                    @media (max-width:768px) {
+                    @media (max-width:767px) {
                         font-size: 25px;
                         line-height: 40px;
-                        margin: 15px 0;
+                        margin: 10px 0;
                     }
 
                     @media (max-width:320px) {
@@ -670,7 +703,7 @@
                     color: $dark-gray;
 
                     @media (max-width:768px) {
-                        font-size: 15px;
+                        font-size: 20px;
                         line-height: 35px;
                         margin-bottom: 6px;
                     }
@@ -705,11 +738,15 @@
 
         .slick-prev {
             left: -64%;
-            top: 91%;
+            top: 82%;
 
             @media (max-width:1440px) {
                 left: -68%;
                 top: 90%;
+            }
+            @media (max-width:1199px) {
+                left: -68%;
+                top: 95%;
             }
 
             @media (max-width:768px) {
@@ -720,13 +757,16 @@
 
         .slick-next {
             left: -58%;
-            top: 91%;
+            top: 82%;
 
             @media (max-width:1440px) {
                 left: -55%;
                 top: 90%;
             }
-
+            @media (max-width:1199px) {
+                left: -55%;
+                top: 95%;
+            }
             @media (max-width:768px) {
                 left: -53%;
                 top: 85%;
@@ -752,7 +792,13 @@
 // start testimonials-slider
 .wpo-testimonials-slider-section {
     position: relative;
-
+    padding-bottom: 60px;
+    @media (max-width:991px) {
+        padding-bottom: 30px; 
+    }
+    @media (max-width:767px) {
+        padding-bottom: 20px; 
+    }
     .bx-wrapper {
         box-shadow: none;
         border: none;
@@ -822,7 +868,7 @@
                         font-size: 23px;
                         font-weight: 700;
                         line-height: 27px;
-                        margin-bottom: 25px;
+                        margin-bottom: 15px;
                         display: flex;
                         justify-content: center;
 
@@ -1055,7 +1101,12 @@
         }
 
         .professionl-btn {
-            @media (max-width:768px) {
+            @media (max-width:991px) {
+                margin-top: 50px;
+                text-align: left;
+                margin-bottom: 27px;
+            }
+            @media (max-width:767px) {
                 margin-top: 50px;
             }
 
@@ -1095,7 +1146,23 @@
     @media (max-width:767px) {
         padding-bottom: 50px;
     }
-
+    .wpo-section-title{
+        span{
+            text-transform: capitalize;
+            margin-top: 6px;
+        }
+        h2{
+            @media (max-width:1199px) {
+                font-size: 42px;
+            }
+            @media (max-width:477px) {
+                font-size: 27px;
+            }
+        }
+        p{
+            margin-bottom: 70px;
+        }
+    }
     .blog-wrap {
 
         .blog-singal {
@@ -1137,7 +1204,7 @@
                     line-height: 33px;
                     text-align: left;
                     color: $heading-color;
-                    margin: 25px 0;
+                    margin: 20px 0 10px;
 
                     @media (max-width:991px) {
                         font-size: 20px;
@@ -1158,7 +1225,7 @@
                     font-weight: 400;
                     line-height: 31px;
                     text-align: left;
-                    margin-bottom: 28px;
+                    margin-bottom: 23px;
 
                     @media (max-width:320px) {
                         font-size: 15px;
