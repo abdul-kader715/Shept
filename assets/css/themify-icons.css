@@ -833,10 +833,10 @@
 .ti-layout-cta-center:before {
 	content: "\e70d";
 }
-.ti-layout-cta-btn-right:before {
+.ti-layout-theme-btn-s3-right:before {
 	content: "\e70e";
 }
-.ti-layout-cta-btn-left:before {
+.ti-layout-theme-btn-s3-left:before {
 	content: "\e70f";
 }
 .ti-layout-column4:before {

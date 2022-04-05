@@ -1,7 +1,8 @@
 /*--------------------------------------------------------------
 4. wpo-footer
 --------------------------------------------------------------*/
-.wpo-site-footer {
+.wpo-site-footer,
+.wpo-site-footer-s2 {
     position: relative;
     background: $scervic-btn-bg;
     font-size: 15px;
@@ -206,7 +207,7 @@
                 i {
                     color: $border-color;
                     padding-right: 8px;
-                    margin-top: 5px;
+                    margin-top: 9px;
                 }
 
             }

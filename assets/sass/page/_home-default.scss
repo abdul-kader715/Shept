@@ -1,4 +1,6 @@
-.wpo-benner-area {
+.wpo-benner-area,
+.wpo-benner-area-s2,
+.wpo-benner-area-s3 {
     background: url(../images/slider/slide-1.jpg);
     background-position: center;
     background-size: cover;
@@ -9,7 +11,7 @@
     left: 0;
     width: 100%;
 
-    .benner-wrap {
+    .benner-wrapr {
         margin: 187px 0 127px;
 
         @media (max-width:991px) {
@@ -92,49 +94,7 @@
             }
         }
 
-        .banner-btn {
-            font-family: $base-font;
-            font-size: 19px;
-            padding: 20px 34px;
-            font-weight: 700;
-            line-height: 25px;
-            background: transparent;
-            color: $white;
-            border-radius: 5px;
-            transition: all .4s ease-in-out;
-            position: relative;
-            z-index: 1;
-            border: 2px solid transparent;
-
-            @media (max-width:767px) {
-                font-size: 15px;
-                padding: 12px 34px;
-                line-height: 17px;
-            }
-
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 5px;
-                z-index: -1;
-                opacity: 1;
-                background: linear-gradient(to right, $cyan, $theme-primary-color);
-                transition: all .4s ease-in-out;
-            }
-
-            &:hover {
-                border: 2px solid $theme-primary-color;
-
-                &::after {
-                    opacity: 0;
-                    width: 0;
-                }
-            }
-        }
+       
     }
 }
 
@@ -267,7 +227,8 @@
 }
 
 // start cta section
-.wpo-cta-section {
+.wpo-cta-section,
+.wpo-cta-section-s2{
     background: $scervic-btn-bg;
     position: relative;
     z-index: 1;
@@ -365,54 +326,13 @@
 
             }
 
-            .cta-btn {
-                font-family: $base-font;
-                font-size: 19px;
-                padding: 20px 34px;
-                font-weight: 700;
-                line-height: 25px;
-                background: transparent;
-                color: $white;
-                border-radius: 5px;
-                transition: all .4s ease-in-out;
-                position: relative;
-                z-index: 1;
-                border: 2px solid transparent;
-
-                @media (max-width:767px) {
-                    font-size: 15px;
-                    padding: 12px 34px;
-                    line-height: 17px;
-                }
-
-                &::after {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 5px;
-                    z-index: -1;
-                    opacity: 1;
-                    background: linear-gradient(to left, $theme-primary-color-s2, $dark-gray);
-                    transition: all .4s ease-in-out;
-                }
-
-                &:hover {
-                    color: $dark-gray;
-                    border: 2px solid $theme-primary-color-s2;
-
-                    &::after {
-                        opacity: 0;
-                        width: 0;
-                    }
-                }
-            }
         }
     }
 
     .cta-right-img {
+        img{
+            object-fit: cover;
+        }
         @media (max-width:767px) {
             margin-top: 40px;
         }
@@ -420,7 +340,9 @@
 }
 
 // start team section
-.wpo-team-section {
+.wpo-team-section,
+.wpo-team-section-s2,
+.wpo-team-section-s3 {
     .wpo-section-title{
         h2{
             margin: 7px 0  22px;
@@ -435,6 +357,16 @@
     }
     .team-wrap {
         margin-top: 9px;
+            .slick-slider {
+                margin:0 -15px;
+            }
+            .slick-slide {
+                margin-right:15px;
+                margin-left:15px;
+            }
+            .slick-slide img {
+                display: unset;
+            }
         .team-single {
             text-align: center;
 
@@ -1136,7 +1068,10 @@
 }
 
 // start wpo-site blogpost section
-.wpo-blogpost-section {
+.wpo-blogpost-section,
+.wpo-blogpost-section-s2,
+.wpo-blogpost-section-s3,
+.wpo-blogpost-section-s4 {
     padding-bottom: 90px;
 
     @media (max-width:991px) {

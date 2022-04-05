@@ -90,6 +90,5 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-auction:before {
     content: "\f118";
 }
-.flaticon-balance:before {
-    content: "\f119";
-}
+
+

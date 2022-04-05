@@ -98,7 +98,16 @@ Version:        1.0.0
 
 
 // page
-@import "page/home-default";
+@import "page/_home-default";
+@import "page/_home-style2";
+@import "page/_home-style3";
+@import "page/_service";
+@import "page/_contact";
+@import "page/_service-single";
+@import "page/_about";
+@import "page/_team-single";
+@import "page/_project";
+@import "page/_error-404";
 
 
 @import "page/_blog";
